@@ -1,0 +1,42 @@
+$title-font-sizes: (
+  null: 60px,
+  480px: 70px,
+  760px: 70px,
+  1024px: 80px,
+  1440px: 110px
+);
+
+$h2-font-sizes: (
+  null: 32px,
+  480px: 32px,
+  760px: 36px,
+  1024px: 40px,
+  1440px: 52px
+);
+
+$p-font-sizes: (
+  null: 18px,
+  480px: 20px,
+  760px: 21px,
+  1024px: 22px,
+  1440px: 22px
+);
+
+$font-weight: (
+  "light": 200,
+  "regular": 400,
+  "bold": 700
+);
+
+@mixin font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@use "./font-imports";
+@use "./fs-mixins";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: Inter, system-ui, sans-serif;
+}
+
+h2 {
+  font-family: Bitter, serif;
+  @include fs-mixins.font-size(fs-mixins.$h2-font-sizes);
+}
+
+nav {
+  
+}
+
+nav li {
+  list-style: none;
+  font-family: Overpass, system-ui, sans-serif;
+  font-weight: 200;
+  font-size: 2rem;
+}
+
+.card-with-gutters {
+  padding: calc(8px + 1.5625vw);
+  @media (min-width: 600px) {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+.body-section {
+  margin: 0 auto;
+  p {
+    @include fs-mixins.font-size(fs-mixins.$p-font-sizes);
+  }
+}
