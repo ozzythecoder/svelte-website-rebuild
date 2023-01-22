@@ -16,6 +16,7 @@ h2 {
   @include fs-mixins.font-size(fs-mixins.$h2-font-sizes);
 }
 
+
 a {
   text-decoration: none;
   color: inherit;
@@ -29,9 +30,10 @@ a {
   }
 }
 
+p {
+  @include fs-mixins.font-size(fs-mixins.$p-font-sizes);
+}
+
 .body-section {
   margin: 0 auto;
-  p {
-    @include fs-mixins.font-size(fs-mixins.$p-font-sizes);
-  }
 }
