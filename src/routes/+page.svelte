@@ -1,15 +1,4 @@
-<script>
-  import TitleSplash from "../lib/components/TitleSplash.svelte";
-  import Nav from "../lib/components/Nav.svelte";
-</script>
-
-<header>
-  <TitleSplash />
-</header>
-
-<Nav />
-
-<main class="body-section card-with-gutters">
+<article class="body-section card-with-gutters">
   <p>
     Ozzy the Painter is a non-binary rapper, producer, and multi-instrumentalist
     from Minneapolis. Though they were born in St Paul, they've called many
@@ -30,7 +19,7 @@
     embraces its grit and its fluidity in equal parts, and leaves an impression
     as complex as the world that gave rise to it.
   </p>
-</main>
+</article>
 
 <style lang="scss">
 </style>
