@@ -16,15 +16,9 @@ h2 {
   @include fs-mixins.font-size(fs-mixins.$h2-font-sizes);
 }
 
-nav {
-  
-}
-
-nav li {
-  list-style: none;
-  font-family: Overpass, system-ui, sans-serif;
-  font-weight: 200;
-  font-size: 2rem;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .card-with-gutters {
