@@ -12,10 +12,6 @@
 </article>
 
 <style lang="scss">
+  @use '../styles.scss';
 
-  .date-published {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    color: #888;
-  }
 </style>
