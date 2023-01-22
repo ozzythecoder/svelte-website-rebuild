@@ -1,10 +1,15 @@
+<!-- 
+  GLOBAL LAYOUT
+ -->
 <script>
   import "$lib/styles/style.scss";
-  import TitleSplash from "../lib/components/TitleSplash.svelte";
   import { fade } from "svelte/transition";
-  import Nav from "../lib/components/Nav.svelte";
 
-  export let data;
+  import TitleSplash from "../lib/components/TitleSplash.svelte";
+  import Nav from "../lib/components/Nav.svelte";
+  import Footer from "../lib/components/Footer.svelte";
+
+  export let data; // contains data from +layout.js
 </script>
 
 {#key data.currentRoute}
@@ -20,5 +25,7 @@
     <main>
       <slot />
     </main>
+
+    <Footer />
   </div>
 {/key}
