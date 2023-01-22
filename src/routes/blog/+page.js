@@ -4,7 +4,8 @@ export const load = async () => {
   const allPosts = await Promise.all(
     allPostFiles.map(async ([filePath, getData]) => {
       const { metadata } = await getData();
-      const path = filePath.replace("/posts", "")
+      const path = filePath.slice(1, -3).replace("/posts", "/blog")
+      console.log(path);
 
       return { path, meta: metadata }
     })
