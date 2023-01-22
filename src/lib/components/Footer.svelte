@@ -11,7 +11,7 @@
 <style>
   footer {
     position: relative;
-    margin: 2.5rem auto;
+    margin: 2.5rem;
   }
 
   #footer-content {
