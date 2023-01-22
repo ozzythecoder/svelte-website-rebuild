@@ -1,5 +1,11 @@
+<!--
+  /CONTACT
+ -->
+
 <script>
-  import Nav from "../../lib/components/Nav.svelte";
 </script>
 
-<Nav />
+<!--
+  spotify and social media links,
+  email?
+ -->

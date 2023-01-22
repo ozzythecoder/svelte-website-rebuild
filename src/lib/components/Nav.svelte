@@ -1,7 +1,7 @@
 <nav>
   <ul>
     <li>
-      <a href="/about"> ABOUT </a>
+      <a href="/blog"> BLOG </a>
     </li>
     <li>
       <a href="/gallery"> GALLERY </a>
