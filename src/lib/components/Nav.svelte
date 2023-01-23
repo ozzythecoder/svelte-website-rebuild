@@ -5,8 +5,7 @@
 <script>
   const navRoutes = [
     { name: "blog", url: "/blog" },
-    { name: "music", url: "/music"},
-    { name: "gallery", url: "/gallery" },
+    { name: "music", url: "https://solo.to/ozzythepainter"},
     { name: "contact", url: "/contact" },
     { name: "home", url: "/" },
   ]
