@@ -24,15 +24,29 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
 
-    min-width: 300px;
+    margin: 2rem 10%;
     padding: 0;
+
+    @media screen and (max-width: 375px) {
+      
+      margin: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+
     
     li {
       
       border: 1px solid #ccc;
       border-radius: 6px;
-
+      width: 40%;
+      min-width: 300px;
+      max-width: 50%;
+      margin: 1rem;
       padding: 1rem;
       list-style: none;
     }
