@@ -9,6 +9,7 @@
   import TitleSplash from "../lib/components/TitleSplash.svelte";
   import Nav from "../lib/components/Nav.svelte";
   import Footer from "../lib/components/Footer.svelte";
+  import Socials from "../lib/components/Socials.svelte";
 
 
   $: getTitleBar = () => {
@@ -34,6 +35,7 @@
     {/if}
 
     <Nav />
+    <Socials />
 
     <main>
       <slot />

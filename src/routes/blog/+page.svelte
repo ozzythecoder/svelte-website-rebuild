@@ -18,7 +18,7 @@
 </ul>
 
 <style lang="scss">
-  @use './styles.scss';
+  @use './style.scss';
 
   .flex-cards {
     display: flex;
