@@ -12,6 +12,6 @@
 </article>
 
 <style lang="scss">
-  @use '../styles.scss';
+  @use '../style.scss';
 
 </style>
