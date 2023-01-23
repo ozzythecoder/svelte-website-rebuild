@@ -12,6 +12,7 @@
   footer {
     position: relative;
     margin: 2.5rem;
+    height: 2rem;
   }
 
   #footer-content {

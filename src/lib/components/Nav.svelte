@@ -6,7 +6,6 @@
   const navRoutes = [
     { name: "blog", url: "/blog" },
     { name: "music", url: "/music"},
-    { name: "gallery", url: "/gallery" },
     { name: "contact", url: "/contact" },
     { name: "home", url: "/" },
   ]
