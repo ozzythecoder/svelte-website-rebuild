@@ -11,7 +11,6 @@
   import Footer from "../lib/components/Footer.svelte";
   import Socials from "../lib/components/Socials.svelte";
 
-
   $: getTitleBar = () => {
     const title = data.currentRoute.slice(1,);
     return title.charAt(0).toUpperCase() + title.slice(1,) || "Ozzy the Painter"
@@ -44,6 +43,3 @@
     <Footer />
   </div>
 {/key}
-
-<style>
-</style>
