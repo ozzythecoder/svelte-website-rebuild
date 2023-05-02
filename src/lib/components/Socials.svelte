@@ -1,40 +1,24 @@
+<!-- 
+  SOCIALS
+ -->
+
+<script>
+  const socials = [
+    { name: "Bandcamp icon", url: "https://ozzythepainter.bandcamp.com/", src: "/social-icons/bandcamp.png" },
+    { name: "Spotify icon", url: "https://open.spotify.com/artist/5Z6R28uhpZFSbuGUYxfFBl", src: "/social-icons/spotify.png" },
+    { name: "Instagram icon", url: "https://instagram.com/ozzythepainter?igshid=Zjc2ZTc4Nzk=", src: "/social-icons/instagram.png" },
+    { name: "Twitter icon", url: "https://twitter.com/ozzythepainter", src: "/social-icons/twitter.png" }
+  ]
+</script>
+
 <ul>
-  <li>
-    <a
-      href="https://ozzythepainter.bandcamp.com/"
-      target="_blank"
-      rel="noreferrer"
-    >
-      <img src="/social-icons/bandcamp.png" alt="Bandcamp icon" />
-    </a>
-  </li>
-  <li>
-    <a
-      href="https://open.spotify.com/artist/5Z6R28uhpZFSbuGUYxfFBl"
-      target="_blank"
-      rel="noreferrer"
-    >
-      <img src="/social-icons/spotify.png" alt="Spotify icon" />
-    </a>
-  </li>
-  <li>
-    <a
-      href="https://instagram.com/ozzythepainter?igshid=Zjc2ZTc4Nzk="
-      target="_blank"
-      rel="noreferrer"
-    >
-      <img src="/social-icons/instagram.png" alt="Instagram icon" />
-    </a>
-  </li>
-  <li>
-    <a
-      href="https://twitter.com/ozzythepainter"
-      target="_blank"
-      rel="noreferrer"
-    >
-      <img src="/social-icons/twitter.png" alt="Twitter icon" />
-    </a>
-  </li>
+  {#each socials as social}
+    <li>
+      <a href={social.url} target="_blank" rel="noreferrer">
+        <img src={social.src} alt={social.name} />
+      </a>
+    </li>
+  {/each}
 </ul>
 
 <style>
