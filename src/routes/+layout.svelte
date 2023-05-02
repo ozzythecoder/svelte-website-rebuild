@@ -27,7 +27,7 @@
 
 {#key data.currentRoute}
   <div in:fade={{ duration: 400 }}>
-    {#if data.currentRoute == "/"}
+    {#if data.currentRoute === "/"}
       <header>
         <TitleSplash />
       </header>
