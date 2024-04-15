@@ -7,13 +7,13 @@
 
 <ul class="flex-cards">
   {#each allPosts as post}
-    <li>
-      <a href={post.path}>
-        <h3>{post.meta.title}</h3>
+    <a href={post.path}>
+      <li>
+        <h2>{post.meta.title}</h2>
         <p class="date-published">{formatDate(post.meta.date)}</p>
         <p>{post.meta.description}</p>
-      </a>
-    </li>
+      </li>
+    </a>
   {/each}
 </ul>
 
@@ -22,33 +22,31 @@
 
   .flex-cards {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 
-    margin: 2rem 10%;
+    margin: 2rem 15%;
     padding: 0;
 
-    @media screen and (max-width: 375px) {
-      
+    @media screen and (max-width: 480px) {
       margin: 0;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
-
     }
 
-    
-    li {
-      
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      width: 40%;
+    a {
+      border-left: 1px solid #ccc;
+      background-color: white;
+      transition: background-color 0.2s linear, border-color 0.2s linear;
       min-width: 300px;
-      max-width: 50%;
       margin: 1rem;
       padding: 1rem;
       list-style: none;
+
+      &:hover {
+        background-color: hsl(0, 10%, 90%);
+        border-color: black;
+      }
     }
   }
 
@@ -57,9 +55,9 @@
     margin: 0.5rem 0;
   }
 
-  h3 {
+  h2 {
     font-family: Bitter, serif;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 2.4rem;
   }
 </style>

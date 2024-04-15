@@ -1,6 +1,4 @@
 <script>
-
-
   export let data;
   const { title, date, Content } = data;
 </script>
