@@ -23,12 +23,12 @@
       {/if}
     </div>
     {#if showTitle}
-      <div
-        in:fade={{ duration: 1000, delay: 1000 }}
-        class="scroll-indicator material-symbols-outlined"
-      >
-        expand_more
-      </div>
+        <a href="#main"
+          in:fade={{ duration: 1000, delay: 1000 }}
+          class="scroll-indicator material-symbols-outlined"
+        >
+          expand_more
+        </a>
     {/if}
   </div>
 </header>
@@ -55,7 +55,10 @@
     text-align: center;
     color: font-imports.$primary;
     left: 50%;
+    transform: translate(-50%, -50%);
     bottom: 5%;
+    cursor: pointer;
+    transition: transform 0.5s ease;
   }
 
   .title-div {
@@ -70,6 +73,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("/hero-img.jpg");
     height: 100vh;
+    background-attachment: fixed;
     background-position: center;
     background-position-x: 0%;
     background-repeat: no-repeat;
