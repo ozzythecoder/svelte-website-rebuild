@@ -1,6 +1,6 @@
 <!-- 
-  GLOBAL LAYOUT
- -->
+GLOBAL LAYOUT
+-->
 
 <script>
   import "$lib/styles/style.scss";
@@ -10,6 +10,7 @@
   import Nav from "../lib/components/Nav.svelte";
   import Footer from "../lib/components/Footer.svelte";
   import Socials from "../lib/components/Socials.svelte";
+    import Header from "../lib/components/Header.svelte";
 
   $: getTitleBar = () => {
     const title = data.currentRoute.slice(1,);
@@ -26,20 +27,21 @@
 </svelte:head>
 
 {#key data.currentRoute}
-  <div in:fade={{ duration: 400 }}>
-    {#if data.currentRoute === "/"}
-      <header>
-        <TitleSplash />
-      </header>
-    {/if}
+<div in:fade={{ duration: 400 }}>
+  {#if data.currentRoute === "/"}
+    <header>
+      <TitleSplash />
+    </header>
+  {:else}
+    <Header />
+  {/if}
 
+  <main id="main">
     <Nav />
     <Socials />
+    <slot />
+  </main>
 
-    <main>
-      <slot />
-    </main>
-
-    <Footer />
-  </div>
+  <Footer />
+</div>
 {/key}

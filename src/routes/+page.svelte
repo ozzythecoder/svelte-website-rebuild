@@ -22,4 +22,7 @@
 </article>
 
 <style lang="scss">
+  article {
+   min-height: 80vh;
+  }
 </style>
