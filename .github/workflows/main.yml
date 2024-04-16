@@ -16,10 +16,10 @@ jobs:
         run: mkdir ~/.ssh && chmod 700 ~/.ssh
 
       - name: Install deploy key
-        run: echo ${{ secrets.DEPLOY_KEY }} > ~/.ssh/deploy
+        run: echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/deploy
 
       - name: Create known hosts
-        run: echo ${{ secrets.KNOWN_HOSTS }} > ~/.ssh/known_hosts
+        run: echo "${{ secrets.KNOWN_HOSTS }}" > ~/.ssh/known_hosts
 
       - name: Install dependencies
         run: cd $GITHUB_WORKSPACE && npm install
