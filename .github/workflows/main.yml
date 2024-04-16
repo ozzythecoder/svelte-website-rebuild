@@ -15,8 +15,8 @@ jobs:
       - name: Create .ssh directory
         run: mkdir ~/.ssh && chmod 700 ~/.ssh
 
-      - name: Install deploy key
-        run: echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/deploy
+      - name: Install deploy key & set permissions
+        run: echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/deploy && chmod 600 ~/.ssh/deploy
 
       - name: Create known hosts
         run: echo "${{ secrets.KNOWN_HOSTS }}" > ~/.ssh/known_hosts
